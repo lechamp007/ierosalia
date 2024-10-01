@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.inicio{
+    left: 10px;
+    padding: 100px;
+    text-align: center;
+}
+.Lista-docentes{
+    margin: 10px;
+    padding: 40px;
+    background-color:
+}
+.pedronel{
+    position: relative;
+    padding: 20px;
+    right: 10px;    
+    left: 300px;
+    top:250px;
+          
+}
+
+.flor{
+    
+    height:30vh ;
+    padding: 20px;
+    right: 10px;    
+    left: 200px;
+     
+    
+}
+#img-flor{
+    position: relative;
+    padding: 20px;
+    
+}
+
