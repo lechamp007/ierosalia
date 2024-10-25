@@ -1,4 +1,58 @@
-.contactanos{
-text-align: center;
-color: blue;
-}
+/* Estilos de la página de contacto */
+.contacto {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+  }
+  
+  .contacto h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contacto p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Sección Redes Sociales */
+  .redes {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eef;
+  }
+  
+  .redes h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .redes img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .redes img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries para Responsividad */
+  @media (max-width: 768px) {
+    .contacto h1 {
+      font-size: 2rem;
+    }
+  
+    .contacto p {
+      font-size: 1rem;
+    }
+  
+    .redes h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
