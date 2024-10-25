@@ -1,42 +1,71 @@
 
-*{
+/* Ajuste de contenedor */
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-.inicio{
-    left: 10px;
-    padding: 100px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal */
+
+  
+ 
+  
+
+  
+ 
+  /* Ajustes de las tarjetas de docentes */
+  .Lista-docentes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente en pantallas pequeñas */
+    justify-content: space-around;
+  }
+  
+  .Lista-docentes h1 {
+    width: 100%;
     text-align: center;
-}
-.Lista-docentes{
+    font-size: 1.8rem;
+  }
+  
+  .docente {
+    width: calc(33.33% - 20px); /* 3 columnas en pantallas grandes */
+    background-color: #f4f4f4;
     margin: 10px;
-    padding: 40px;
-    background-color:
-}
-.pedronel{
-    position: relative;
-    padding: 20px;
-    right: 10px;    
-    left: 300px;
-    top:250px;
-          
-}
-
-.flor{
-    
-    height:30vh ;
-    padding: 20px;
-    right: 10px;    
-    left: 200px;
-     
-    
-}
-#img-flor{
-    position: relative;
-    padding: 20px;
-    
-}
-
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Para animación */
+    transform: translateY(50px); /* Para animación */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1024px) {
+    .docente {
+      width: calc(50% - 20px); /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .docente {
+      width: calc(100% - 20px); /* 1 columna en pantallas pequeñas */
+    }
+  }
+  
+  /* Ajuste de imágenes */
+  .docente img {
+    max-width: 100%; /* Las imágenes ocupan el ancho disponible */
+    height: auto;
+  }
+  
+  /* Efectos hover para interacción */
+  .docente:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Transiciones iniciales */
+  .docente {
+    transition: all 0.6s ease;
+  }
+  
