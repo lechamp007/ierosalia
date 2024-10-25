@@ -188,6 +188,72 @@ background-color: rgb(17, 160, 237);
    
     
 }
+/* Estilos para centrar la sección de Novedades */
+.novedades {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    padding: 30px 20px; /* Espaciado alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 40px auto; /* Espacio arriba y auto para centrar horizontalmente */
+    text-align: center; /* Centrar texto */
+    max-width: 600px; /* Ancho máximo para la sección */
+}
+
+/* Título de Novedades */
+.titulo-novedades {
+    font-size: 2.5rem; /* Tamaño más grande */
+    color: #2c3e50; /* Azul oscuro */
+    margin-bottom: 10px; /* Espacio abajo */
+}
+
+/* Descripción de Novedades */
+.novedades-descripcion {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #7f8c8d; /* Gris oscuro */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+/* Lista de Novedades */
+.lista-novedades {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Elementos de la lista */
+.lista-novedades li {
+    font-size: 1.1rem; /* Tamaño del texto */
+    color: #34495e; /* Gris más oscuro */
+    margin: 15px 0; /* Espacio entre elementos */
+    position: relative; /* Posicionamiento relativo */
+    padding-left: 30px; /* Espacio a la izquierda */
+}
+
+/* Iconos para cada novedad */
+.icono-novedad {
+    position: absolute; /* Posicionamiento absoluto */
+    left: 0; /* Alinear a la izquierda */
+    font-size: 1.5rem; /* Tamaño del icono */
+}
+
+/* Botón para ver más novedades */
+.boton-novedades {
+    display: inline-block;
+    margin-top: 20px; /* Espacio arriba */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #2980b9; /* Azul */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.boton-novedades:hover {
+    background-color: #3498db; /* Azul más claro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escalado */
+}
+
 .nosotros{
     height: 25vh;
     padding: 50px;
@@ -259,53 +325,72 @@ background-color: rgb(17, 160, 237);
     font-size: 20px;
 }
 
-.mision{
-    display: inline-block;
-    block-size: 30vh;
-    background-color: #dce5ee;
-    position:center;
-    left: 500px;
-    border: 100px;
-    cursor: pointer;
-    margin-bottom: 100px;
-    transition: background-color 0.1s, font-weight 0.1s;
-    transition: transform 1s ease-in-out;
-}
-.mision:hover {
-
-    font-weight: bold;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-.titulo-mision{
-   text-align: center;
-   padding: 10px;
-}
-.texto-mision{
-    padding: 50px;
-}
-.vision{
-    display: inline-block;
-    block-size: 30vh;
-    background-color: #dce5ee;
-    position: relative;
-    left: 6px;
-    right: 20px;
-    border: 100px; 
-    cursor: pointer;
-    transition: background-color 0.1s, font-weight 0.1s;
-    transition: transform 1s ease-in-out;
-}
-.vision:hover {
-    font-weight: bold;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-.titulo-vision{
+/* Sección "Nosotros" */
+.nosotros {
     text-align: center;
-    padding: 10px;
-}
-.texto-vision{
-    padding: 50px;
-}
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nosotros h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .nosotros p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Sección "Valores" */
+  .valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 100px auto;
+    max-width: 1200px;
+
+  }
+  
+  /* Estilo para cada bloque (Misión y Visión) */
+  .valores div {
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    flex: 1 1 45%; /* Flexibilidad para adaptarse a la pantalla */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto hover para las tarjetas */
+  .valores div:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Títulos */
+  .valores h1 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 3px;
+  }
+  
+  /* Texto */
+  .valores p {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+
+  
 .novedades{
     text-align: center;
     left: 10px;
@@ -321,10 +406,107 @@ background-color: rgb(17, 160, 237);
     font-size: 20px;
     line-height:60px;
 }
-.manual{
-    font-size: 20px;
+
+.nosotros {
+    background-color: #f9f9f9; 
+    padding: 50px 20px;
+    border-radius: 10px; 
+    max-width: 800px;
+    margin: 40px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     text-align: center;
-}
+  }
+  
+  /* Estilo para el título */
+  .nosotros h1.conoce {
+    font-size: 2.5rem;
+    color: #2c3e50; 
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para el párrafo */
+  .nosotros p.informacion {
+    font-size: 1.2rem;
+    color: #7f8c8d; 
+    line-height: 1.6;
+  }  
+/** MANUAL DE CONVIVENCIA**/
+.manual-convivencia {
+    background-color: #f4f4f4; 
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    margin: 30px auto;
+    max-width: 800px; 
+  }
+  
+  /* Título del manual */
+  .manual-convivencia h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .manual-convivencia p {
+    font-size: 1.1rem;
+    color: #7F8C8D;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+
+  .manual-convivencia .button {
+    display: inline-block;
+    background-color: #3498DB;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Icono en el botón */
+  .manual-convivencia .button .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+
+  .manual-convivencia .button:hover {
+    background-color: #2980B9; 
+    transform: translateY(-3px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .manual-convivencia .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    z-index: 1;
+  }
+  
+  .manual-convivencia .button:hover::before {
+    transform: translateX(0); 
+  }
+  
+  .manual-convivencia .button span {
+    position: relative;
+    z-index: 2;
+  }
 
 /*---------------------------------------------Pie de pagina-----------------------------------*/
 .pie-pagina{
